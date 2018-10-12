@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var API_KEY = "Go get an API key";
+  var API_KEY = "5385cf1f5ce46ed64bc2a10307200f30";
   var CORS_WRAPPER = "https://cors-anywhere.herokuapp.com/"
-  var URL = CORS_WRAPPER + "http://api.wunderground.com/api/" + API_KEY + "/hourly/q/NY/New_York.json";
-  var ctx = document.getElementById("NYCWeatherChart").getContext("2d")
+  var URL = CORS_WRAPPER + "https://api.darksky.net/forecast/" + API_KEY + "/40.7128, -74.0060";
+  // var ctx = document.getElementById("NYCWeatherChart").getContext("2d")
 
-
-  makeRequest(URL, function(json) {
-    var data = generateDataSet(getHours(json), getFahrenheits(json));
-    var tempChart = new Chart(ctx).Line(data, { bezierCurve: true });
-  });
+  // makeRequest(URL, ctx)
 });
+
+// "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/5385cf1f5ce46ed64bc2a10307200f30/40.7128, -74.0060"
