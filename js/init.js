@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         data: {
             labels: data.map(elemenet => elemenet.time),
             datasets: [{
-                label: 'THE DOM',
+                label: 'Houston Weather Temperature Forecast in 48hrs',
                 data: data.map(elemenet => elemenet.temp),
                 backgroundColor: 
                     'rgba(255, 99, 132, 0.2)',
@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     },
                     scaleLabel: {
                       display: true,
-                      labelString: 'Temperature'
+                      labelString: 'Temperature(F)'
                     }
                 }],
 
                 xAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: 'Time'
+                    labelString: 'Time (hr)'
                   },
                   ticks: {
                     fontSize: 20
